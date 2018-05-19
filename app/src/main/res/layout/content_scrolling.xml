@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.home.khalil.employeedirectory.ScrollingActivity"
+    tools:showIn="@layout/activity_employee_profile">
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/profile_name"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:text="Khalil Faraj"
+
+            android:textColor="@android:color/black"
+            />
+
+        <View
+            android:id="@+id/profile_view"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_below="@+id/profile_name"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageView
+            android:layout_marginTop="25dp"
+            android:id="@+id/profile_image_role"
+            android:src="@drawable/ic_role"
+            android:layout_below="@+id/profile_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/profile_text_role"
+            android:layout_height="wrap_content"
+            android:text="CEO"
+
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/profile_image_role"
+            android:layout_below="@+id/profile_view"
+            />
+
+        <View
+            android:id="@+id/profile_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+
+            android:layout_below="@+id/profile_text_role"
+            android:layout_alignStart="@+id/profile_text_role"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/profile_image_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_view2"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_call"
+            />
+
+        <TextView
+            android:id="@+id/profile_text_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+44 7427 524165"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/profile_image_call"
+            android:layout_below="@id/profile_view2"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+
+            />
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:id="@+id/fab_message"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/profile_view2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_message"
+
+            />
+
+        <View
+            android:id="@+id/profile_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+
+            android:layout_below="@+id/profile_text_call"
+            android:layout_alignStart="@+id/profile_text_call"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_image_email"
+            android:src="@drawable/ic_email"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/profile_view3"
+            />
+
+
+        <TextView
+            android:id="@+id/profile_text_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@id/profile_view3"
+            android:layout_toRightOf="@+id/profile_image_email"
+            android:textColor="@android:color/black"
+            android:text="khalilfaraj22@gmail.com"
+            />
+
+
+
+        <View
+            android:id="@+id/profile_view4"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+
+            android:layout_below="@+id/profile_text_email"
+            android:layout_alignStart="@+id/profile_text_email"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_image_department"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/profile_view4"
+            android:src="@drawable/ic_department"
+            />
+
+        <TextView
+            android:id="@+id/profile_text_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/profile_image_department"
+            android:layout_below="@id/profile_view4"
+            android:text="Entire Company"
+            />
+
+        <View
+            android:id="@+id/profile_view5"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+
+            android:layout_below="@+id/profile_text_department"
+            android:layout_alignStart="@+id/profile_text_department"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_image_location"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/profile_view5"
+            android:src="@drawable/ic_location"
+            />
+
+        <TextView
+            android:id="@+id/profile_text_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/profile_view5"
+            android:layout_toRightOf="@+id/profile_image_location"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:text="London"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:id="@+id/fab_map"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/profile_view5"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_loc"
+
+            android:layout_alignParentRight="true" />
+
+        <View
+            android:id="@+id/profile_view6"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+
+            android:layout_below="@+id/profile_text_location"
+            android:layout_alignStart="@+id/profile_text_location"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+<TextView
+    android:id="@+id/manager_title"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Manager"
+    android:layout_marginLeft="20dp"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    android:textColor="@color/colorPrimary"
+    android:layout_marginTop="40dp"
+    android:layout_below="@+id/profile_text_location"
+    />
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/layout"
+            android:layout_below="@+id/manager_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="96dp"
+            android:id="@+id/manager_image"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="1dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_profile_pic"
+            android:layout_height="96dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/text_manager_name"
+            android:layout_below="@+id/manager_image"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/text_manager_role"
+                android:layout_below="@+id/text_manager_name"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/direct_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Direct Report"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+
+            android:layout_below="@+id/layout"
+            />
+
+
+
+        <android.support.v7.widget.RecyclerView
+
+
+
+            android:layout_below="@+id/direct_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/direct_recyler_view"
+
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

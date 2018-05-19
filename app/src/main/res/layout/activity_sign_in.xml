@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.home.khalil.employeedirectory.SignInActivity">
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="Log in to Employee Directory."
+        android:textColor="@color/colorPrimary"
+
+        />
+
+    <TextView
+        android:id="@+id/email_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email ID"
+        android:layout_below="@id/title"
+        android:textSize="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <EditText
+        android:id="@+id/sign_in_email"
+        android:layout_below="@+id/email_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/role_title"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:text="Role"
+        android:layout_below="@+id/sign_in_email"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/sign_in_role"
+        android:layout_below="@+id/role_title"
+
+        />
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custome_shape"
+        android:textAllCaps="false"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentEnd="true"
+        android:text="Log in"
+
+        android:textColor="@android:color/white"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0D0D0"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/sign_in_button"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/main_row_image"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="96dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"
+        android:layout_height="96dp" />
+
+    <TextView
+        android:layout_toRightOf="@+id/main_row_image"
+        android:id="@+id/main_row_name"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khalil Faraj"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+
+        />
+
+    <TextView
+        android:layout_toRightOf="@+id/main_row_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CEO"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/main_row_role"
+        android:layout_below="@+id/main_row_name"
+        android:textSize="16sp"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_alignStart="@+id/main_row_name"
+        android:layout_below="@+id/main_row_image"
+        android:layout_alignLeft="@+id/main_row_name" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_chevron"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_above="@+id/view"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

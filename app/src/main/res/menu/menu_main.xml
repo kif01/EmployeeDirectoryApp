@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.home.khalil.employeedirectory.MainActivity">
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"
+        />
+
+    <item
+
+        android:id="@+id/action_sign_out"
+        android:orderInCategory="100"
+        android:title="Log out"
+        app:showAsAction="never" />
+</menu>

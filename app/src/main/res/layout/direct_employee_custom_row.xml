@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="50dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_centerHorizontal="true"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/direct_image"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/default_profile_pic"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/colorPrimary"
+
+        />
+
+    <View
+        android:layout_marginLeft="20dp"
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@+id/direct_image"
+         />
+    <TextView
+        android:id="@+id/direct_name"
+
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="Khalil"
+        android:textSize="16sp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/direct_image"
+
+        />
+
+    <TextView
+        android:id="@+id/direct_name2"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="Faraj"
+        android:textSize="16sp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/direct_name"
+
+        />
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CEO"
+        android:layout_below="@+id/direct_name2"
+        android:id="@+id/direct_role"
+
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>

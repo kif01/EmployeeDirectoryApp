@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.home.khalil.employeedirectory.SignUpActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Cancel"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        />
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_id"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+
+            android:id="@+id/signup_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_role"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/input_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/signup_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Role" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custome_shape"
+        android:textAllCaps="false"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentEnd="true"
+        android:text="Next"
+
+        android:textColor="@android:color/white"
+
+        />
+
+</RelativeLayout>

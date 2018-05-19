@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.home.khalil.employeedirectory.AddEmployeeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="25dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/colorPrimary"
+        android:id="@+id/add_profile_image"
+        android:layout_width="100dp"
+        android:scaleType="centerCrop"
+        android:layout_height="100dp"
+        android:src="@drawable/default_profile_pic"
+        android:layout_centerHorizontal="true"
+        />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/add_profile_image"
+            android:id="@+id/input_layout_name"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:paddingBottom="15dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:backgroundTint="#D0D0D0"
+                android:id="@+id/add_name"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--<android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_role"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+
+                android:id="@+id/add_role"
+                android:backgroundTint="#D0D0D0"
+                android:layout_width="match_parent"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Role" />
+
+        </android.support.design.widget.TextInputLayout>-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_email"
+            android:paddingBottom="15dp"
+            android:layout_below="@+id/input_layout_name"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+
+                android:id="@+id/add_email"
+                android:backgroundTint="#D0D0D0"
+                android:layout_width="match_parent"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:hint="Email" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:paddingBottom="15dp"
+            android:id="@+id/input_layout_phone_number"
+            android:layout_below="@+id/input_layout_email"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+
+                android:id="@+id/add_phone_number"
+                android:layout_width="match_parent"
+                android:inputType="phone"
+                android:textSize="15sp"
+                android:backgroundTint="#D0D0D0"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:layout_marginTop="20dp"
+            android:id="@+id/spinner_departments"
+            android:layout_below="@+id/input_layout_phone_number"
+            android:hint="Department"
+            android:backgroundTint="#FAFAFA"
+            android:elevation="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/spinner1_view"
+            android:background="#D0D0D0"
+
+            android:layout_below="@+id/spinner_departments"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/spinner_locations"
+            android:layout_below="@+id/spinner_roles"
+            android:hint="Location"
+            android:backgroundTint="#FAFAFA"
+            android:elevation="0dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/spinner_roles"
+            android:layout_below="@id/spinner_departments"
+            android:hint="Role"
+            android:backgroundTint="#FAFAFA"
+            android:elevation="0dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/spinner3_view"
+            android:background="#D0D0D0"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/spinner_roles"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/spinner2_view"
+            android:background="#D0D0D0"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/spinner_locations"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/text_mgr"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/spinner2_view"
+            android:layout_height="wrap_content"
+            android:text="Manager"
+            android:textSize="18sp"
+
+            />
+
+        <Spinner
+            android:id="@+id/spinner_manager"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/text_mgr"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/spinner_manager_view"
+            android:background="#D0D0D0"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/spinner_manager"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+
+            />
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/text_dr"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/spinner_manager_view"
+            android:layout_height="wrap_content"
+            android:text="Direct Reports"
+            android:textSize="18sp"
+
+            />
+
+        <com.guna.libmultispinner.MultiSelectionSpinner
+            android:layout_below="@+id/text_dr"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/mySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/spinner_dr_view"
+            android:background="#D0D0D0"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/mySpinner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+
+            />
+
+
+
+        <android.support.design.widget.FloatingActionButton
+
+            android:layout_below="@+id/spinner_dr_view"
+            android:id="@+id/fab_add_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_submit" />
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
